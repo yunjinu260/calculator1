@@ -9,7 +9,7 @@ def main():
     calc = QApplication(sys.argv)
     app=QApplication(sys.argv)
     view=View()
-    Control(view=view)
+    Control(view = view)
     sys.exit(app.exec_())
    
 
