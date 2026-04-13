@@ -52,7 +52,7 @@ class View(QWidget):
         self.resize(256,256)
         self.show()
 
-    def setDisplay(self, text):
+    def selfDisplay(self, text):
         self.te1.appendPlainText(text)
         self.te1.appendPlainText("Button Clicked!")
    
