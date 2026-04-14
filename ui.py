@@ -31,7 +31,7 @@ class View(QWidget):
         self.te1 = QPlainTextEdit()
         self.te1.setReadOnly(True)
 
-        self.btn1=QPushButton('Message', self)
+        self.btn1=QPushButton('Calc', self)
         self.btn2=QPushButton('Clear', self)
         
         hbox = QHBoxLayout()
@@ -52,7 +52,10 @@ class View(QWidget):
         self.resize(256,256)
         self.show()
 
-    def activateMessage(self, text):
+        self.cb = QComboBox(self)
+        self.cb.addItems(['+', "-", '*', '/', '^'])
+
+    def setDisplay(self, text):
         self.te1.appendPlainText(text)
         self.te1.appendPlainText("Button Clicked!")
    
