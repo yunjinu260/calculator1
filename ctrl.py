@@ -32,4 +32,4 @@ class Control:
                 return e
                 
         return a/b
-    
+
