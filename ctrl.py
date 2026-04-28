@@ -9,27 +9,7 @@ class Control:
 
     def connectSignals(self):
 
-        self.view.btn1.clicked.connect(lambda:\
-                                        self.view.setDisplay(self.calculate()))
-
+        self.view.btn1.clicked.connect(self.calculate)
         self.view.btn2.clicked.connect(self.view.clearMessage)
 
-    def sum(self, a, b):
-        return a+b
-    
-    def sub(self, a, b):
-         return a-b
-
-    def mul(self, a, b):
-        return a*b
-        
-    def div(self, a, b):
-        try :
-            if (b==0):
-                raise Exception("Divisior Error")
-            
-        except Exception as e:
-                return e
-                
-        return a/b
-
+   
