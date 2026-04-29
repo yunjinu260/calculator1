@@ -63,8 +63,7 @@ class View(QWidget):
         self.cb = QComboBox(self)
         self.cb.addItems(['+', '-', '*', '/', '^', '%', '//'])
 
-    def setDisplay(self, text):
-        self.te1.appendPlainText(text)
+    def setDisplay(self):
         self.te1.appendPlainText("Button Clicked!")
    
     def clearMessage(self):
