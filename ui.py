@@ -23,7 +23,7 @@ class View(QWidget):
         self.le2.setAlignment(QtCore.Qt.AlignRight)
 
         self.cb = QComboBox(self)
-        self.cb.addItems(['+', '-', '*', '/', '^'])
+        self.cb.addItems(['+', '-', '*', '/', '^','%'])
 
         hbox_formular = QHBoxLayout()
         hbox_formular.addWidget(self.le1)
@@ -59,9 +59,6 @@ class View(QWidget):
         self.setWindowIcon(QIcon('icon.jpg'))
         self.resize(256,256)
         self.show()
-
-        self.cb = QComboBox(self)
-        self.cb.addItems(['+', '-', '*', '/'])
 
     def setDisplay(self, text):
         self.te1.appendPlainText(text)
