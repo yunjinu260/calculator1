@@ -60,9 +60,6 @@ class View(QWidget):
         self.resize(256,256)
         self.show()
 
-        self.cb = QComboBox(self)
-        self.cb.addItems(['+', '-', '*', '/'])
-
     def setDisplay(self, text):
         self.te1.appendPlainText(text)
     
